@@ -679,3 +679,298 @@
     margin-top: 15px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   CLASSCONNECT - RESPONSIVE CSS
+   Add this code at the END of style.css
+========================================= */
+
+/* Prevent horizontal scrolling */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- TABLET (1024px) ---------- */
+@media screen and (max-width: 1024px) {
+
+    .resources-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .semester-page-container,
+    .subjects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .mainPage-content {
+        padding: 30px;
+    }
+
+    .semester-banner {
+        padding: 25px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .chapter-list {
+        width: 90%;
+    }
+}
+
+/* ---------- MOBILE (767px) ---------- */
+@media screen and (max-width: 767px) {
+
+    /* Navbar */
+    .navbar {
+        height: auto;
+        min-height: 65px;
+        padding: 12px 18px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .nav-links a {
+        display: block;
+    }
+
+    /* Hero Section */
+    .mainPage_bg_img {
+        min-height: 65vh;
+        height: auto;
+        padding: 50px 18px;
+        background-position: center;
+    }
+
+    .mainPage-content {
+        width: 100%;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .mainPage-content h1 {
+        font-size: clamp(28px, 7vw, 40px);
+    }
+
+    .mainPage-content p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* Academic Resources */
+    .academic-resources {
+        padding: 40px 15px;
+    }
+
+    .resources-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .resources-card {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 10px;
+    }
+
+    /* Quick Access */
+    .quick_access {
+        padding: 35px 15px;
+    }
+
+    .semester-banner {
+        width: 100%;
+        padding: 22px 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .wrap {
+        width: 100%;
+    }
+
+    .banner-mark {
+        margin: 0 auto;
+    }
+
+    /* Semester Cards */
+    .semester-page {
+        padding: 35px 15px;
+    }
+
+    .semester-page-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .semester-card {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 10px;
+    }
+
+    /* Subject Cards */
+    .subjects-page {
+        padding: 35px 15px;
+    }
+
+    .subjects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .subject-card {
+        width: 100%;
+        min-width: 0;
+        padding: 18px 10px;
+    }
+
+    /* Chapter List */
+    .chapter-list {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .chapter-item {
+        padding: 14px;
+    }
+
+    /* Test Papers */
+    .test-papers-page {
+        padding: 30px 15px;
+    }
+
+    .test-paper-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .paper-tab {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .paper-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 18px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* ---------- SMALL MOBILE (480px) ---------- */
+@media screen and (max-width: 480px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .mainPage_bg_img {
+        min-height: 55vh;
+    }
+
+    .mainPage-content h1 {
+        font-size: 27px;
+    }
+
+    .mainPage-content p {
+        font-size: 14px;
+    }
+
+    .resources-container,
+    .semester-page-container,
+    .subjects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .resources-card,
+    .semester-card,
+    .subject-card {
+        width: 100%;
+    }
+
+    .semester-heading,
+    .subjects-heading {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .test-paper-tabs {
+        flex-direction: column;
+    }
+
+    .paper-tab {
+        width: 100%;
+    }
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
