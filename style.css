@@ -757,7 +757,7 @@ img {
         top: 0;
     padding: 0 15px;
     flex-wrap: wrap;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     margin-top: 0;
 }
 
@@ -769,8 +769,10 @@ img {
     .nav-links {
         width: 100%;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
+        text-align: right;
         gap: 16px;
+        padding-right: 15px;
         padding: 0;
         margin: 0;
     }
@@ -795,7 +797,7 @@ img {
 
     .mainPage-content {
         width: 100%;
-        padding: 20px 10px;
+        padding: 25px 12px;
         text-align: left;
     }
 
