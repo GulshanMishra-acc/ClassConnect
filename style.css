@@ -983,3 +983,28 @@ img {
     }
 }
 
+
+/* FIX: NAVBAR TOP POSITION ON MOBILE */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+
+    .navbar {
+        position: relative;
+        top: 0;
+        margin-top: 0;
+        padding: 0 15px !important;
+        padding-bottom: 0 !important;
+        min-height: 65px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
