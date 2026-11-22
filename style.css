@@ -761,13 +761,14 @@ img {
     }
 
     .logo {
-        font-size: 28px;
+        font-size: 30px;
+        padding: 10px;
     }
 
     .nav-links {
         width: 100%;
         flex-direction: row;
-        align-items: end;
+        align-items: flex-end;
         gap: 12px;
         padding: 0;
         margin: 0;
@@ -788,7 +789,7 @@ img {
         min-height: 65vh;
         height: auto;
         padding: 50px 18px;
-        background-position: right;
+        background-position: center;
     }
 
     .mainPage-content {
@@ -798,13 +799,13 @@ img {
     }
 
     .mainPage-content h2 {
-        font-size: 24px;
+        font-size: 26px;
     }
     .mainPage-content h3 {
-        font-size: 20px;
+        font-size: 22px;
     }
     .mainPage-content h4 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .mainPage-content p {
@@ -928,7 +929,8 @@ img {
 @media screen and (max-width: 480px) {
 
     .logo {
-        font-size: 26px;
+        font-size: 30px;
+        padding: 10px;
     }
 
     .mainPage_bg_img {
