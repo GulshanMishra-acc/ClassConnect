@@ -752,16 +752,16 @@ img {
 
     /* Navbar */
     .navbar {
-        height: auto;
-        min-height: 65px;
+        /* height: auto;
+        min-height: 65px; */
         padding: 0px;
         flex-wrap: wrap;
-        position: relative;
+        /* position: relative; */
         padding-bottom: 20px;
     }
 
     .logo {
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .nav-links {
@@ -781,6 +781,8 @@ img {
 
     .nav-links a {
         display: block;
+        border-top: 1px solid #54749C;
+        border-bottom: 1px solid #54749C;
     }
 
     /* Hero Section */
@@ -798,7 +800,7 @@ img {
     }
 
     .mainPage-content h2 {
-        font-size: clamp(28px, 7vw, 40px);
+        font-size: 24px;
     }
     .mainPage-content h3 {
         font-size: 20px;
@@ -928,16 +930,16 @@ img {
 @media screen and (max-width: 480px) {
 
     .logo {
-        font-size: 18px;
+        font-size: 26px;
     }
 
     .mainPage_bg_img {
         min-height: 55vh;
     }
 
-    .mainPage-content h1 {
+    /* .mainPage-content h1 {
         font-size: 27px;
-    }
+    } */
 
     .mainPage-content p {
         font-size: 14px;
