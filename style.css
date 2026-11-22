@@ -754,13 +754,14 @@ img {
     .navbar {
         height: auto;
         min-height: 65px;
-        padding: 12px 18px;
+        padding: 0px;
         flex-wrap: wrap;
         position: relative;
+        padding-bottom: 20px;
     }
 
     .logo {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .nav-links {
@@ -793,11 +794,17 @@ img {
     .mainPage-content {
         width: 100%;
         padding: 20px 10px;
-        text-align: center;
+        text-align: left;
     }
 
-    .mainPage-content h1 {
-        font-size: clamp(28px, 7vw, 40px);
+    .mainPage-content h2 {
+        font-size: 22px;
+    }
+    .mainPage-content h3 {
+        font-size: 20px;
+    }
+    .mainPage-content h4 {
+        font-size: 18px;
     }
 
     .mainPage-content p {
