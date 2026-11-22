@@ -796,7 +796,7 @@ img {
         text-align: center;
     }
 
-    .mainPage-content h1 {
+    .mainPage-content h2 {
         font-size: clamp(28px, 7vw, 40px);
     }
 
