@@ -798,7 +798,7 @@ img {
     }
 
     .mainPage-content h2 {
-        font-size: 22px;
+        font-size: clamp(28px, 7vw, 40px);
     }
     .mainPage-content h3 {
         font-size: 20px;
