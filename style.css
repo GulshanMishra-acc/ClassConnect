@@ -1,0 +1,681 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.mainPage_bg_img{
+    background-image: url("assets/bg_img.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 75vh; 
+    position: relative; 
+}
+.navbar{
+    background-color: #0B2E63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+.logo{
+    color: white;
+    font-size: 26px;
+    font-weight: 600;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.nav-links a:hover{
+    color: #93C5FD;
+}
+.mainPage-content{
+    padding: 70px 8%;
+    color: white;
+}
+.mainPage-content h2{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.mainPage-content h3{
+    font-size:28px;
+    margin-bottom: 15px;
+}
+.mainPage-content h4{
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+.mainPage-content p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.explore-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 24px;
+    background: white;
+    color: #0B2E63;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.academic-resources{
+    padding: 60px 8%;
+    background-color: #F8FAFC;
+}
+.academic-resources h2 {
+    /* text-align: center; */
+    font-size: 30px;
+    color: #0B2E63;
+    /* margin-bottom: 5px; */
+}
+.section-description {
+    /* text-align: center; */
+    font-size: 15px;
+    color: #64748B;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+.resources-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+/* .quick-access-container a{
+    text-decoration: none;
+}
+.quick-access-container > a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+} */
+.resources-card{
+    background: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+     transition: 0.3s ease;
+     /* cursor: pointer; */
+     height: 100%;
+}
+.resources-card:hover{
+    transform: translateY(-6px);
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+.resources-card svg{
+    font-size: 35px;
+    color: #0B2E63;
+    margin-bottom: 18px;
+}
+.resources-card h3 {
+    font-size: 18px;
+    color: #0B2E63;
+    margin-bottom: 10px;
+}
+.resources-card p {
+    font-size: 14px;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+.quick_access > h2 {
+    padding: 0px 8%;
+    font-size: 30px;
+    color: #0B2E63;
+    margin-bottom: 30px;
+}
+.semester-banner {
+    margin-bottom: 78px;
+    padding: 30px 48px;
+    border-radius: 22px;
+    background: linear-gradient(115deg, #102f5e, #1e5598);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.semester-banner:after {
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    border: 1px solid #ffffff1b;
+    border-radius: 50%;
+    right: 100px;
+    top: -160px;
+    box-shadow: 0 0 0 35px #ffffff08, 0 0 0 75px #ffffff06
+}
+
+.semester-banner h2 {
+    font: 800 30px/1.25 Manrope, sans-serif;
+    letter-spacing: -1px;
+    margin: 12px 0
+}
+
+.semester-banner p {
+    font-size: 13px;
+    color: #c6d9f1;
+    margin: 0 0 21px
+}
+
+.eyebrow.light {
+    color: #a9cdf7
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    padding: 12px 19px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .2s ease
+}
+.wrap {
+    width: min(1160px, calc(100% - 48px));
+    margin-inline: auto
+}
+.btn-white {
+    background: white;
+    color: #102f5e;
+    text-decoration: none;
+}
+
+.btn-white:hover {
+    background: #edf5ff
+}
+
+.banner-mark {
+    font: 800 104px/1 Manrope, sans-serif;
+    color: #ffffff1e;
+    position: relative;
+    z-index: 1;
+    text-align: center
+}
+
+.banner-mark span {
+    display: block;
+    font: 700 10px Manrope, sans-serif;
+    letter-spacing: 4px;
+    color: #c1d8f4
+}
+
+.footer{
+    background-color:  #0B2E63;
+    color: white;
+    padding: 35px 8% 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 25px;
+}
+.footer-brand h2 {
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+.footer-brand p,
+.footer-info p {
+    font-size: 13px;
+    color: #DBEAFE;
+    line-height: 1.8;
+}
+.footer-info h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.footer-note{
+    border-top: 1px solid #54749C;
+    text-align: center;
+    padding: 15px 0;
+     color: #DBEAFE;
+    font-size: 12px;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #54749C;
+    color: #DBEAFE;
+    font-size: 12px;
+}
+
+
+
+/* semesters.html */
+
+.semester-page{
+    min-height: 70vh;
+    padding: 35px 5% 60px;
+    background: #F5F8FF;
+}
+.semester-heading {
+    margin-bottom: 25px;
+}
+.back-home {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #2563EB;
+    font-size: 13px;
+    text-decoration: none;
+}
+.back-home svg {
+    margin-right: 5px;
+}
+.semester-heading h1 {
+    font-size: 30px;
+    color: #0B2E63;
+    margin-bottom: 5px;
+}
+.semester-heading p {
+    color: #64748B;
+    font-size: 14px;
+}
+.semester-page-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.semester-card {
+    min-height: 150px;
+    padding: 18px 15px;
+    background: #FFFFFF;
+    border: 1px solid #D8E2F1;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    text-decoration: none;
+    color: #0B2E63;
+
+    transition: 0.3s ease;
+}
+.semester-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #94A3B8;
+    color: #FFFFFF;
+
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.semester-card h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.semester-card p {
+    font-size: 12px;
+    color: #64748B;
+    margin-bottom: 10px;
+}
+.semester-available {
+    border: 1.5px solid #2563EB;
+}
+.semester-available .semester-number {
+    background: #2563EB;
+}
+.semester-available:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.15);
+}
+.semester-explore {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+
+    background: #2563EB;
+    color: #FFFFFF;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+.semester-explore svg {
+    margin-left: 5px;
+}
+.semester-locked {
+    background: #F8FAFC;
+    cursor: not-allowed;
+}
+.semester-locked .semester-lock {
+    color: #94A3B8;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+/* sem1_subject.html */
+
+
+/* Subjects Page */
+
+.subjects-page {
+    min-height: 70vh;
+    padding: 35px 5% 60px;
+    background: #F5F8FF;
+}
+
+.subjects-heading {
+    margin-bottom: 35px;
+}
+
+.subjects-heading h1 {
+    font-size: 30px;
+    color: #0B2E63;
+    margin: 12px 0 8px;
+}
+
+.subjects-heading p {
+    color: #64748B;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.semester-label {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 15px;
+    background: #DBEAFE;
+    color: #1D4ED8;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.subjects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.subject-card {
+    background: #FFFFFF;
+    border: 1px solid #D8E2F1;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+.subject-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.10);
+}
+
+.subject-icon {
+    font-size: 32px;
+    color: #2563EB;
+    margin-bottom: 15px;
+}
+
+.subject-card h3 {
+    font-size: 17px;
+    color: #0B2E63;
+    margin-bottom: 8px;
+}
+
+.subject-card p {
+    font-size: 13px;
+    color: #64748B;
+    margin-bottom: 18px;
+}
+
+.subject-explore {
+    display: inline-block;
+    background: #2563EB;
+    color: white;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* notes-page.html */
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chapter-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 13px 16px;
+    text-decoration: none;
+    color: #0B2E63;
+    transition: 0.2s ease;
+}
+.chapter-item:hover {
+    border-color: #93C5FD;
+    background-color: #EFF6FF;
+}
+.chapter-item span {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+.pdf-icon {
+    color: #DC4444;
+    font-size: 19px;
+}
+.download-icon {
+    color: #2563EB;
+    font-size: 14px;
+}
+
+
+/* test-paper-page.html */
+
+/* =================================
+   TEST PAPERS PAGE
+================================= */
+
+.test-papers-page {
+    min-height: 75vh;
+    background-color: #F8FAFC;
+    padding: 40px 8% 60px;
+}
+
+.test-papers-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+
+/* =================================
+   INTERNAL / EXTERNAL TABS
+================================= */
+
+.test-paper-tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.paper-tab {
+    border: 1px solid #E2E8F0;
+    outline: none;
+    border-radius: 8px;
+    padding: 13px 15px;
+
+    background-color: #FFFFFF;
+    color: #0B2E63;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Selected Tab */
+
+.paper-tab.active {
+    background-color: #0B2E63;
+    color: #FFFFFF;
+    border-color: #0B2E63;
+}
+
+/* Unselected Tab */
+
+.paper-tab:not(.active) {
+    background-color: #E2E8F0;
+    color: #0B2E63;
+}
+
+.paper-tab:not(.active):hover {
+    background-color: #DBEAFE;
+    border-color: #93C5FD;
+}
+
+/* Coming Soon Label */
+
+.paper-tab span {
+    display: block;
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+
+/* =================================
+   INTERNAL PAPERS LIST
+================================= */
+
+.internal-paper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.paper-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 13px 16px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+
+    text-decoration: none;
+    color: #0B2E63;
+
+    transition: all 0.25s ease;
+}
+
+.paper-item:hover {
+    background-color: #EFF6FF;
+    border-color: #93C5FD;
+    transform: translateY(-2px);
+}
+
+.paper-item span {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* PDF Icon */
+
+.pdf-icon {
+    color: #DC4444;
+    font-size: 19px;
+}
+
+/* Download Icon */
+
+.download-icon {
+    color: #2563EB;
+    font-size: 14px;
+}
+
+
+/* =================================
+   EXTERNAL PAPERS - COMING SOON
+================================= */
+
+.external-content[hidden] {
+    display: none;
+}
+
+.coming-soon-message {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+.coming-soon-message > i {
+    display: block;
+    color: #93C5FD;
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.coming-soon-message h3 {
+    color: #0B2E63;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.coming-soon-message span {
+    display: inline-block;
+
+    padding: 6px 16px;
+
+    background-color: #DBEAFE;
+    color: #0B2E63;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.coming-soon-message p {
+    color: #64748B;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
