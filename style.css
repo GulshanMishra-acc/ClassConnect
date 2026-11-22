@@ -761,36 +761,34 @@ img {
     }
 
     .logo {
-        font-size: 26px;
+        font-size: 28px;
     }
 
     .nav-links {
         width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 0;
+        flex-direction: row;
+        align-items: end;
+        gap: 12px;
         padding: 0;
         margin: 0;
     }
 
-    .nav-links li {
+    /* .nav-links li {
         width: 100%;
         text-align: center;
         padding: 12px 0;
-    }
+    } */
 
-    .nav-links a {
+    /* .nav-links a {
         display: block;
-        border-top: 1px solid #54749C;
-        border-bottom: 1px solid #54749C;
-    }
+    } */
 
     /* Hero Section */
     .mainPage_bg_img {
         min-height: 65vh;
         height: auto;
         padding: 50px 18px;
-        background-position: center;
+        background-position: right;
     }
 
     .mainPage-content {
