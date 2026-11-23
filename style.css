@@ -93,6 +93,9 @@
     grid-template-columns: repeat(4,1fr);
     gap: 25px;
 }
+.resources-container a{
+            text-decoration: none;
+        }
 /* .quick-access-container a{
     text-decoration: none;
 }
