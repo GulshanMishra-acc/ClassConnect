@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 .mainPage_bg_img{
     background-image: url("assets/bg_img.png");
     background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 75vh; 
     position: relative; 
 }
